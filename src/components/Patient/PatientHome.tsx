@@ -69,7 +69,7 @@ export const PatientHome = (props: {
   const Tab = tabs.find((t) => t.route === page);
 
   if (!patientData) {
-    return <div>{t("patient_not_found")}</div>;
+    return <div>{t("patient_access_restricted")}</div>;
   }
 
   return (
